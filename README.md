@@ -1,4 +1,4 @@
-<b>Hello "VSCode" World<b>
+<b>Hello "VSCode" World</b>
 
 Archive of common vscode setups and example
 "hello world" code for a variety of different languages.
@@ -8,6 +8,13 @@ used to write code, it's often not setup correctly and
 lacks breakpoint functionality, which can often be irritating
 to setup.  This repo. attempts to rectify this common problem
 and provide pre-built .vscode files and devcontainer files.
+
+Devcontainers are useful, as they established a common development
+environment and standards for all developers during a project, removing
+the worry that bugs due to compiler version mismatches may occur.  It
+also means you have the correct setup and reduces the need for a local
+environment setup of your systems (i.e. no dependencies beyond a Docker
+installation)
 
 Includes;
 
@@ -23,6 +30,7 @@ Languages Included;
 <li>C++</li>
 <li>C++ and Cuda</li>
 <li>Node (multiply devcontainers, with docker compose and database)</li>
+<li>Net Core</li>
 <li>React</li>
 <li>Swift</li>
 <li>Python</li>
