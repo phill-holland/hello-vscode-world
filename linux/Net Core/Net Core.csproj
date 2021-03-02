@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <RootNamespace>Net_Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Program.cs" />
+  </ItemGroup>
+</Project>
