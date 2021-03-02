@@ -9,7 +9,7 @@ lacks breakpoint functionality, which can often be irritating
 to setup.  This repo. attempts to rectify this common problem
 and provide pre-built .vscode files and devcontainer files.
 
-Devcontainers are useful, as they established a common development
+Devcontainers are useful, as they establish a common development
 environment and standards for all developers during a project, removing
 the worry that bugs due to compiler version mismatches may occur.  It
 also means you have the correct setup and reduces the need for a local
