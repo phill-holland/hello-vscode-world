@@ -24,17 +24,21 @@ Includes;
 <li>One click "F5" build and running</li>
 </ul>
 
-Languages Included;
+<b>Navigate to each folder via the command line, and then type "code ."  (don't open the whole root tree at once!)</b>
+
+Languages;
 
 <ul>
 <li>C++</li>
 <li>C++ and Cuda</li>
-<li>Node (multiply devcontainers, with docker compose and database)</li>
+<li>Node (multiple devcontainers, with docker compose and database)</li>
 <li>Net Core</li>
 <li>React</li>
 <li>Swift</li>
 <li>Python</li>
 <li>Cobol</li>
+<li>Asm Elf64</li>
+<li>Java</li>
 </ul>
 
 <b>When opening project directories in VSCode you should be prompted

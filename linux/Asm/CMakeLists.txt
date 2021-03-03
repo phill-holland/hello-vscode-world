@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.18)
+
+set(CMAKE_ASM_NASM_OBJECT_FORMAT elf64)
+
+project(hellonasm ASM_NASM)
+
+enable_language(ASM_NASM)
+
+set(CMAKE_NASM_LINK_EXECUTABLE "ld <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>")
+set(CAN_USE_ASSEMBLER TRUE)
+
+file(GLOB SOURCE CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/*.asm")
+
+add_executable(${PROJECT_NAME} ${SOURCE})
+
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE NASM)
