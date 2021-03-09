@@ -10,4 +10,3 @@ WORKDIR /init
 RUN wget https://swift.org/builds/swift-5.3.3-release/ubuntu2004/swift-5.3.3-RELEASE/swift-5.3.3-RELEASE-ubuntu20.04.tar.gz
 RUN tar -xvzf swift-5.3.3-RELEASE-ubuntu20.04.tar.gz -C /swift
 ENV PATH="/swift/swift-5.3.3-RELEASE-ubuntu20.04/usr/bin:${PATH}"
-#RUN ln -s /swift/swift-5.3.3-RELEASE-ubuntu20.04/usr/bin/swift /usr/local/bin/swift

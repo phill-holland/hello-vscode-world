@@ -1,6 +1,6 @@
 <b>Hello "VSCode" World</b>
 
-Archive of common vscode setups and example
+Archive of common <b>VSCODE</b> setups and example
 "hello world" code for a variety of different languages.
 
 It's a common occurrance that whilst VScode can be
@@ -33,7 +33,6 @@ Languages;
 <li>C++ and Cuda</li>
 <li>Node (multiple devcontainers, with docker compose and database)</li>
 <li>Net Core</li>
-<li>React</li>
 <li>Swift</li>
 <li>Python</li>
 <li>Cobol</li>
@@ -51,6 +50,6 @@ Pre-requisites;
 
 <ul>
 <li>Needs docker installed</li>
-<li>VSCode installed</li>
+<li><b>VSCode installed</b></li>
 <li>Remote containers Plug-in to be installed</li>
 </ul>

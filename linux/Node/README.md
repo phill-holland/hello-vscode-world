@@ -1,38 +1,42 @@
-<h1>Node JSON Server of Genetic Algorithm</h1>
+<b>Hello-Node-World</b>
 
-A conversation of a C++ project into node for learning purposes.
+This application will insert "Hello World" into a mongo database each time the website is visited, and then output all the occurances of "Hello World" within the database, when the webpage is visited, incrementing the total number of "Hello World" records within the database.
 
-A simple framework using KOA to implement a microservice, and
-routing systems for;
+This application consists of two development containers with;
 
-<ul>
-<li>Creating and returning a GA program schema, in JSON</li>
-<li>For setting and overwriting poorly performing GA schemes</li>
-</ul>
+Node
+MongoDB
 
-Also contains investigations into;
+And demonstrates how to configure vscode how to use a docker-compose.yaml file. (see inside the .devcontainer folder)
 
-<ul>
-<li>VSCode for usage of breakpoint points and debugging directly within the editor</li>
-<li>VSCode for development containers, and remote development</li>
-<li>VSCode live sharing experiments</li>
-</ul>
-
-Node/TypeScript/JavaScript feature usage;
+To run;
 
 <ul>
-<li>The creation and usage of classes</li>
-<li>Abstract classes and inheritance (interfaces)</li>
+<li><b>Ensure project is open within the development container</b></li>
+<li><b>Hit F5</b></li>
+<li><b>navigate to http://localhost:8081</b></li>
 </ul>
 
-Future modifications;
+This application demonstrates the following;
 
 <ul>
-<li>JSON exporting functionality expansion, class member decorators for exclusions DONE</li>
-<li>Integrate into a database, such as mongo</li>
-<li>Integrate OAuth2 security considerations</li>
-<li>storing and managing access credentials to API's and services such as the DB</li>
-<li>Async Promises</li>
-<li>Jest/Enzyme Testing</li>
+<li>The Koa Framework for handling web requests and routes</li>
+<li>The Mongoose Framework and Mongo database</li>
+<li>Debugging Node Applications within VSCode</li>
+<li>How to specify a docker-compose.yaml for multiply development containers</li>
+<li>VSCode debugging and breakpoint functionality</li>
 </ul>
+
+Requirements;
+
+The VSCode development container plugin is installed;
+
+https://code.visualstudio.com/docs/remote/containers
+
+Docker must also be installed;
+
+https://docs.docker.com/get-docker/
+
+This application, however is configured with linux based containers, and will not work correctly on Windows without modification.
+
 

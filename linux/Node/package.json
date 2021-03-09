@@ -1,18 +1,18 @@
 {
-  "name": "nodeai",
-  "description": "<h1>Node JSON Server of Genetic Algorithm</h1>",
+  "name": "node",
+  "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phill-holland/nodeAI.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phill-holland/nodeAI/issues"
+    "url": "http://www.google.com?q=rick+astley"
   },
-  "homepage": "https://github.com/phill-holland/nodeAI#readme",
+  "homepage": "",
   "scripts": {
     "debug": "node --inspect-brk main.js",
     "start": "ts-node-dev main.ts"

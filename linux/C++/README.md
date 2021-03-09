@@ -1,15 +1,30 @@
-Requires;
+<b>Hello-C++-World</b>
 
-cmake version 3.18 or above
-GCC installed
+This application allows the compilation and execution
+of a simple C++ "Hello World" application.
+To run;
 
-(see Dockerfile inside .devcontainer folder for software requirements)
+<ul>
+<li><b>Ensure project is open within the development container</b></li>
+<li><b>Hit F5</b></li>
+</ul>
 
-LLDB debugging (if running on a mac, requires slightly different debugging application)
+This application demonstrates the following;
 
-F5 to run
-Ctrl + P for make/clean options
+<ul>
+<li>Cmake; a support system for compiling, linking and building applications</li>
+<li>VS code debugging and breakpoint functionality</li>
+<li>Docker development container configuration</li>
+</ul>
 
-Includes;
+Requirements;
 
-Devcontainer configuration
+The VSCode development container plugin is installed;
+
+https://code.visualstudio.com/docs/remote/containers
+
+Docker must also be installed;
+
+https://docs.docker.com/get-docker/
+
+This application, however is configured with linux based containers, and will not work correctly on Windows without modification.

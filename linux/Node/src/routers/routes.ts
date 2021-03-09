@@ -1,35 +1,25 @@
 import Router from 'koa-router';
-import { deserialize, serialize } from 'typescript-json-serializer';
-import { Schema } from '../classes/schema';
-import { Breeding } from "../classes/breeding";
-import Authentication from "../authentication/authentication";
-
-let breeder = new Breeding(10);
+import dotenv from 'dotenv';
+import { HelloSchema, HelloModel, ConnectionString } from '../mongo/hello';
 
 const routes = new Router();
 
-routes.get('/get', function(ctx,next) {
-    ctx.body = serialize(breeder.get());
-  });
+dotenv.config();
 
-  routes.post('/set', function(ctx,next) {
-    breeder.set(deserialize<Schema>(this.request.body,Schema));
-    ctx.body = '';
-  });
+var mongoose = require('mongoose');
 
-  routes.get('/save', function(ctx,next) {
-    breeder.save();
-    ctx.body = '';
-  });
+routes.get('/', async(ctx) => {
 
-  routes.get('/load', function(ctx,next) {
-    breeder.load();
-    ctx.body = '';
-  });
+  console.warn(ConnectionString());
 
-  routes.post('/example-auth', Authentication, (ctx, next) => {
-    ctx.body = { success: true, msg: "Authentication was successful" };
-    ctx.response.status = 500;
-  })
-  
+  try {
+    await HelloModel.create({value: 'Hello World!'});
+
+    const cursor = HelloModel.find().cursor();
+    for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {
+      ctx.body += doc.value + '\n';
+    }
+  } catch(err) { throw err; }
+});
+
 export default routes;

@@ -13,12 +13,3 @@ app.use(routes.routes())
   .use(routes.allowedMethods());
 
 export default app;
-
-// import database mysql/mongo experiment
-
-// queue experiments
-
-// other testing frameworks jest/enzyme
-
-// package management
-

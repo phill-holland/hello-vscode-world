@@ -2,25 +2,24 @@ version: '3'
 
 services:
   app:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
-
     volumes:
-    - ..:/workspace:cached
-    
+      - ..:/workspace:cached
     command: sleep infinity
-    
-    network_mode: service:db
+    networks:
+      - backend
 
   db:
     image: mongo:latest
-    restart: unless-stopped
-    volumes:
-      - mongodb-data:/data/db
-
+    restart: always
+    ports:
+      - "27017:27017"
     environment:
-      MONGO_INITDB_DATABASE: testdb
+      - MONGO_INIT_DB_DATABASE=dbtest
+    networks:
+      - backend
 
-volumes:
-  mongodb-data:
+networks:
+  backend:
