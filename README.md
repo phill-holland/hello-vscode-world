@@ -38,6 +38,7 @@ Languages;
 <li>Cobol</li>
 <li>Asm Elf64</li>
 <li>Java</li>
+<li>Go</li>
 </ul>
 
 <b>When opening project directories in VSCode you should be prompted
